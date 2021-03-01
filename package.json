@@ -1,0 +1,19 @@
+{
+  "name": "snotechou",
+  "version": "1.0.0",
+  "description": "",
+  "main": "editor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snomiao/snotechou.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snomiao/snotechou/issues"
+  },
+  "homepage": "https://github.com/snomiao/snotechou#readme"
+}
