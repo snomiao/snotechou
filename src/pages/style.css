@@ -1,0 +1,11 @@
+html,body{
+    margin: 0;
+}
+
+.snote div[contentEditable]{
+    border-right: 0.1em grey solid;
+}
+.snote div[contentEditable]:focus{
+    /* border-left: 1px grey solid; */
+    box-shadow: 0 0 0.2em grey;
+}
