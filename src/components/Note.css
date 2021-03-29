@@ -1,0 +1,61 @@
+a{
+    text-underline-position: under;
+}
+.snote-container{
+    background-color: #efefef;
+}
+.snote-list{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    align-content: center;
+}
+.snote-header{
+    box-shadow: 0 0 0.5em grey;
+}
+.snote-note{
+    background: white;
+    max-width: 30em;
+    min-width: 10em;
+    display: inline-block;
+}
+.snote-note:focus{
+    box-shadow: 0 0 1em grey;
+}
+.snote-note div[contentEditable]{
+    /* border-right: 0.1em grey solid; */
+    max-height: 80vh;
+    overflow: auto;
+}
+/* .snote-note div[contentEditable]:focus{
+    box-shadow: 0 0 2em grey;
+} */
+
+.snote-note div[contentEditable].learn:not(:focus) strong,
+.snote-note div[contentEditable].learn:not(:focus) em,
+.snote-note div[contentEditable].learn:not(:focus) b,
+.snote-note div[contentEditable].learn:not(:focus) u,
+.snote-note div[contentEditable].learn:not(:focus) i {
+    color: #FFFFFF00;
+    background-color: yellow;
+    display: inline-block;
+    width: 3em; height: 1em; overflow: hidden;
+}
+.snote-note div[contentEditable].learn i{
+    color: #FFFFFF00;
+    background-color: yellow;
+}
+a.snote-extract{
+    background-color:paleturquoise;
+    max-height: 10em;
+    max-width: 35em;
+    display: inline-block;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    /* white-space:nowrap;     */
+    margin: 0 0.5em;
+}
+
+.snote-note div[contentEditable] *{
+    position: relative !important;
+ }

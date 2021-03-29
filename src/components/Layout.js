@@ -3,8 +3,9 @@ import pkg from '../../package.json';
 
 function Header(props) {
   return (<header style={{
+    float: 'right',
     textAlign: 'center',
-    background: 'deepskyblue',
+    background: 'yellow',
     color: 'white',
   }}>
     {props.标题}
@@ -12,6 +13,9 @@ function Header(props) {
 }
 function Footer() {
   return (<footer style={{
+    padding: '2em',
+    background: '#111111',
+    color: 'white',
     // textAlign: 'center',
     // display:'flex',
     // flexDirection: 'column',
@@ -26,8 +30,10 @@ export function PageLayout({ 标题, children }) {
     minHeight: '100vh',
     flexDirection: 'column',
   }}>
-
-    <main style={{ flex: 1 }}>{children}</main>
+    <Header></Header>
+    <main style={{
+      flex: 1, maxWidth: '100%',
+    }}>{children}</main>
     <Footer></Footer>
   </div>);
 
